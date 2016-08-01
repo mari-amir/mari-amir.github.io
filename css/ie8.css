@@ -1,0 +1,10 @@
+/*-------------------------
+    STYLE FOR IE-8
+----------------------*/
+body{
+  /*min-width: 960px;*/
+}
+.slider {
+  background-color: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+}
