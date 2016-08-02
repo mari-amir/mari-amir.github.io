@@ -34,6 +34,8 @@ header {
     background: url("../img/bg-header.jpg") center top no-repeat;
     height: 845px;
     padding-top: 67px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 .wrapper960 {
@@ -44,27 +46,20 @@ header {
     height: 210px;
 }
 .header-top__logo {
-    float: left;
-    font-size: 47px;
-    text-transform: uppercase;
-}
-.header-top__logo span {
     display: inline-block;
-    color: #fff;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    width: 153px;
+    height: 40px;
+    background: url("../img/logo-top.png") no-repeat bottom;
 }
-.header-top__logo i {
-    display: inline-block;
-    color: transparent;
-    background-image: linear-gradient(to top, #322539, #745083);
-    -webkit-background-clip: text;
+.header-top__logo span, i {
+    display: none;
 }
 .navigate {
     float: right;
     overflow: hidden;
 }
 .navigate ul {
-    font-size: 0;
+    font-size: 1px;
 }
 .navigate__item {
     display: inline-block;
@@ -87,6 +82,7 @@ header {
 }
 .slider {
     height: 400px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)";
     background: rgba(0, 0, 0, 0.2);
 }
 .slider__wrapper960 {
@@ -152,6 +148,8 @@ header {
 }
 .slider__control label {
     display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 17px;
     height: 17px;
@@ -175,9 +173,17 @@ header {
     z-index: 1;
     height: 342px;
     border-top: 1px solid #33253a;
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
     color: #fff;
     font-weight: 400;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#322539')";
+    /* IE8 */
+    background-image: -webkit-linear-gradient(bottom, #322539, #745083);
+    background-image: -moz-linear-gradient(bottom, #322539, #745083);
+    background-image: -o-linear-gradient(bottom, #322539, #745083);
+    background-image: -ms-linear-gradient(bottom, #322539, #745083);
     background-image: linear-gradient(to top, #322539 0%, #745083 100%);
     font-family: "League Gothic";
 }
@@ -195,6 +201,8 @@ header {
 .about-company__item {
     position: relative;
     display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 29.5%;
     padding-left: 6.77%;
@@ -241,6 +249,8 @@ header {
 /*BLOG*/
 
 .blog {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 487px;
     border-bottom: 1px solid #e6e6e6;
@@ -256,6 +266,8 @@ header {
 }
 .slider--mini {
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 32px 27px 36px 38px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -317,6 +329,8 @@ header {
 }
 .blog-list {
     float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     padding: 3.125% 0 0 4.25%;
@@ -347,6 +361,8 @@ header {
     background: url(../img/sprite-blog.png) no-repeat;
 }
 .blog-list__item:nth-child(1) i {
+    -ms-background-position-x: -5px;
+    -ms-background-position-y: -53px;
     background-position: -5px -53px;
 }
 .blog-list__item:nth-child(2) i {
@@ -379,6 +395,8 @@ header {
     background: #f9f9f9;
 }
 .provider-logo ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     height: 120px;
@@ -405,6 +423,8 @@ header {
 /*COMMENTS*/
 
 .comments {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 397px;
     border-top: 1px solid #d8d8d8;
@@ -425,6 +445,8 @@ header {
 }
 .comments__block {
     display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
     width: 29.1666%;
@@ -886,11 +908,11 @@ footer p b {
         max-width: 100%;
     }
     .slider__img {
-        display: none;		
+        display: none;
     }
-	.btn {
-		display: none;
-	}
+    .btn {
+        display: none;
+    }
     .slider__control {
         padding: 28px 107px;
     }
